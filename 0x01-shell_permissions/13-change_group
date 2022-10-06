@@ -1,2 +1,2 @@
 #!/bin/bash
-chrp scool hello
+chgrp scool hello
