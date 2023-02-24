@@ -10,7 +10,7 @@ function love() {
     exit
 }
 
-trap "echo I hate the kill command;love" SIGTERM
+trap "echo I hate the kill command" SIGTERM
 trap "echo Y U no love me?!" SIGINT
 
 echo $$ >> /var/run/myscript.pid
