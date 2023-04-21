@@ -1,6 +1,5 @@
-# install flask -v 2.5.0
-  exec { 'install python packages':
-     command   => 'pip3 install flask flask_restful apiai',
-     path => ['/usr/bin/'],
-     unless  => '/usr/bin/test -f /usr/local/lib/python3.4/dist-packages/flask/app.py'
-  }
+# install puppet-lint -v 2.5.0
+
+exec { 'flask':
+  command => '/usr/bin/apt-get -pip3 install flask -v 2.5.0',
+}
