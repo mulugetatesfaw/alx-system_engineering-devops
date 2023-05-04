@@ -1,5 +1,8 @@
+#   ProxyCommand ssh -q -W %h:%p gateway.example.com
+#   RekeyLimit 1G 1h
     SendEnv LANG LC_*
     HashKnownHosts yes
     GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
+    IdentityFile ~/.ssh/holberton
     PasswordAuthentication no
-    IdentityFile ~/.ssh/school
