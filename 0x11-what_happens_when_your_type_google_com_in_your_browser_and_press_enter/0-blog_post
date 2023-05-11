@@ -1,0 +1,27 @@
+#What happens when you type google.com in your browser and press Enter
+
+When you type https://www.google.com in your browser and press Enter, a complex process occurs behind the scenes that enables you to access the website. In this blog post, I will explain the step-by-step process that takes place and the role of various components involved in it.
+
+DNS Request:
+The first step in accessing a website is to translate the domain name (www.google.com) into an IP address. This is done through the Domain Name System (DNS) protocol. Your computer sends a DNS request to a DNS server, which then responds with the IP address of the website.
+
+TCP/IP:
+Once the IP address is obtained, your computer establishes a Transmission Control Protocol (TCP) connection with the server hosting the website. TCP is responsible for ensuring that the data sent between your computer and the server is transmitted reliably and without errors. The Internet Protocol (IP) is used to route the data packets between your computer and the server.
+
+Firewall:
+If your computer is behind a firewall, the firewall checks whether the request is legitimate and allows it to pass through to the server. A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predefined security rules.
+
+HTTPS/SSL:
+Once the TCP connection is established, your computer sends a request to the server using the Hypertext Transfer Protocol (HTTP). If the website is secured using HTTPS (Hypertext Transfer Protocol Secure), the request is encrypted using Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols. The web server hosting the website is responsible for handling the HTTPS request and providing a valid SSL/TLS certificate to your browser.
+
+Load-balancer:
+In case of high traffic many websites like Facebook , LinkedIn etc.. uses multiple servers hosting website at different locations allover the world, a load balancer distributes the requests across multiple servers, ensuring that no single server is overloaded. Load balancers are used to improve website performance and provide high availability.
+
+Web Server:
+The web server is responsible for processing the HTTP(S) request and sending the appropriate response back to your computer. The response typically contains HTML, CSS, and JavaScript files that your browser uses to render the website.
+
+Application Server:
+If the website requires dynamic content, such as interactive forms or personalized content, the web server sends the request to an application server. The application server processes the request, retrieves data from the database, and generates a dynamic response that is sent back to the web server.
+
+Database:
+Finally, if the website requires data storage or retrieval, the application server communicates with a database server to store or retrieve the necessary data. The database server is responsible for managing the storage and retrieval of data for the website.
