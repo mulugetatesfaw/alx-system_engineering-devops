@@ -7,7 +7,7 @@ Permissions 0644 for '/root/.ssh/id_rsa.pub' are too open.
 It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 Load key "/root/.ssh/id_rsa.pub": bad permissions
-ubuntu@100.25.163.14: Permission denied (publickey).
+ubuntu@IP_Address_of_my_server: Permission denied (publickey).
 
 # Root Cause and Resolution
 This error message indicated that the permissions on my public key file, located at /root/.ssh/id_rsa.pub, were too open. Specifically, the file had permissions of 0644, which meant that the owner had read and write access, but others had read-only access. This was not secure enough for SSH authentication, as anyone who could read the file could potentially use it to impersonate me and gain access to my server.
